@@ -1,27 +1,27 @@
-#. ATENÇÃO! PEDRA GANHA DA TESOURA; ● PAPEL GANHA DA PEDRA; ● TESOURA GANHA DO PAPEL
+#. ATENÇÃO! ● PEDRA GANHA DA TESOURA; ● PAPEL GANHA DA PEDRA; ● TESOURA GANHA DO PAPEL
 
-jogador1 = input("Jogador 1, digite seu nome: ")
-jogador2 = input("Jogador 2, digite seu nome: ")
+jogador1 = input("Jogador 1: digite seu nome  ")
+jogador2 = input("Jogador 2: digite seu nome  ")
 
-escolha1 = int(input(f" {jogador1} escolha sua opção: 1° Pedra | 2° Papel | 3° Tesoura: "))
-escolha2 = int(input(f" {jogador2} escolha sua opção: 1° Pedra | 2° Papel | 3° Tesoura: "))
+escolha1 = input(f" {jogador1} escolha sua opção: Pedra | Papel | Tesoura: ")
+escolha2 = input(f" {jogador2} escolha sua opção: Pedra | Papel | Tesoura: ")
 
-if escolha1 == 1 and escolha2 == 3:
+if escolha1 == "Pedra" or "pedra" and escolha2 == "Tesoura" or "tesoura":
     print(f'O jogador {jogador1} venceu!')
 
-elif escolha2 == 1 and escolha1 == 3:
+elif escolha2 == "Pedra" or "pedra" and escolha1 == "Tesoura" or "tesoura":
     print(f'O jogador {jogador2} venceu!')
 
-elif escolha1 == 2 and escolha2 == 1:
+elif escolha1 == "Pepel" or "papel" and escolha2 ==  "Pedra" or "pedra":
     print(f'O jogador {jogador1} venceu!')
 
-elif escolha2 == 2 and escolha1 == 1:
+elif escolha2 == "Pepel" or "papel" and escolha1 ==  "Pedra" or "pedra":
     print(f'O jogador {jogador2} venceu!')
 
-elif escolha1 == 3 and escolha2 == 2:
+elif escolha1 == "Tesoura" or "tesoura" and escolha2 == "Pepel" or "papel":
     print(f'O jogador {jogador1} venceu!')
 
-elif escolha2 == 3 and escolha1 == 2:
+elif escolha2 == "Tesoura" or "tesoura" and escolha1 == "Pepel" or "papel":
     print(f'O jogador {jogador2} venceu!')
 
 else:
